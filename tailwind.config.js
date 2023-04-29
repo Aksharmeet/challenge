@@ -4,7 +4,8 @@ module.exports = {
 	theme: {
 		extend: {
 			backgroundImage: {
-				'landing-bg': "url('assets/images/bgGradient.svg')",
+				'landing-bg': "url('assets/svgs/bgGradient.svg')",
+				'right-arrow': "url('assets/svgs/rightArrow.svg')",
 			},
 		},
 	},
