@@ -7,8 +7,8 @@ import { useState } from 'react'
 function Index() {
 	const [userScreen, setUserScreen] = useState('profile')
 	return (
-		<section className='w-[100vw] py-[30px] px-[50px] relative' style={{ overflow: 'hidden' }}>
-			<div>
+		<section className='w-[100vw] pb-[30px] px-[50px] relative' style={{ overflow: 'hidden' }}>
+			<div className='w-[100%] relative top-[60px]'>
 				<Header setUserScreen={setUserScreen} userScreen={userScreen} className='' />
 			</div>
 			<div className='flex gap-14'>

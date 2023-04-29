@@ -2,9 +2,9 @@ import UserDropdown from './userDropdown'
 
 function Index() {
 	return (
-		<div className='absolute w-[70%] flex justify-between items-center left-[385px] top-12'>
+		<div className='flex justify-between items-center ml-[335px] border-b pb-5 border-stone-300'>
 			<div>
-				<p>Profile</p>
+				<p className='text-xl font-medium text-[#545454]'>Profile</p>
 			</div>
 			<div>
 				<UserDropdown />
