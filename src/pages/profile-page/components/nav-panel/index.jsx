@@ -19,8 +19,8 @@ function Index({ userScreen, setUserScreen }) {
 	}, [userScreen])
 
 	return (
-		<section className='bg-gradient-to-bl from-[#375BC8] to-[#6039C8] h-[90vh] p-10 rounded-3xl'>
-			<div className=' w-[200px] text-lg font-normal text-[#A5A5E5] flex flex-col justify-center h-[100%] relative '>
+		<section className='bg-gradient-to-bl from-[#375BC8] to-[#6039C8] h-[90vh]  p-10 rounded-3xl w-[280px] min-w-[280px]'>
+			<div className=' text-lg font-normal text-[#A5A5E5] flex flex-col justify-center h-[100%] relative '>
 				<div className={`py-3 cursor-pointer ${userScreen === 'profile' ? 'text-[#fff]' : ''}`} onClick={() => handleScreenChange('profile')}>
 					<p>Profile</p>
 				</div>
