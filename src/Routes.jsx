@@ -19,13 +19,15 @@ function NoMatch() {
 }
 
 export default function Routes() {
+	const [crrUser, setCrrUser] = React.useState(null)
+
 	return (
 		<>
 			<BrowserRouter>
 				<Suspense fallback={<code>Loading...</code>}>
 					<Switch>
-						<Route path='/' element={<HomePage />} />
-						<Route path='/profile-page' element={<ProfilePage />} />
+						<Route path='/' element={<HomePage setCrrUser={setCrrUser} />} />
+						<Route path='/profile-page' element={<ProfilePage crrUser={crrUser} setCrrUser={setCrrUser} />} />
 						<Route path='*' element={<NoMatch />} />
 						<Route path='/home' element={<Navigate to='/' replace />} />
 					</Switch>
