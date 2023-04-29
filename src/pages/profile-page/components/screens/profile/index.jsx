@@ -3,7 +3,7 @@ import RightPanel from './rightPanel'
 
 function Index() {
 	return (
-		<div className='flex divide-[#CCCCCC] justify-between w-[100%] top-20 relative'>
+		<div className='flex divide-[#CCCCCC] justify-between w-[100%]'>
 			<LeftPanel />
 			<RightPanel />
 		</div>

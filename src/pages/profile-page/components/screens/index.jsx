@@ -11,7 +11,7 @@ function Index({ userScreen }) {
 		toDo: <ToDO />,
 	}
 
-	return <div className='w-[100%] h-[100%]'>{screens[userScreen]}</div>
+	return <div className='w-[100%] h-[100%] top-20 relative'>{screens[userScreen]}</div>
 }
 
 export default Index
