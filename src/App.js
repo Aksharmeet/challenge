@@ -1,5 +1,11 @@
+import Routes from './Routes'
+
 function App() {
-	return <div></div>
+	return (
+		<>
+			<Routes />
+		</>
+	)
 }
 
 export default App
