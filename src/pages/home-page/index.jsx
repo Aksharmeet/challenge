@@ -9,6 +9,7 @@ function Index() {
 		const fetchData = async () => {
 			const { data } = await axios('https://panorbit.in/api/users.json')
 			setUsers(data.users)
+			localStorage.setItem('users', JSON.stringify(data.users))
 		}
 		fetchData()
 

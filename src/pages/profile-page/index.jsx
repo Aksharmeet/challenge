@@ -16,7 +16,9 @@ function Index() {
 				<NavPanel setUserScreen={setUserScreen} userScreen={userScreen} />
 				<Screen userScreen={userScreen} />
 			</div>
-			<Chats />
+			<div className='fixed bottom-0 right-16 z-10'>
+				<Chats />
+			</div>
 		</section>
 	)
 }
