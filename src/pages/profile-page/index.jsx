@@ -8,8 +8,8 @@ function Index() {
 	const [userScreen, setUserScreen] = useState('profile')
 
 	return (
-		<section className='w-[100vw] pb-[80px] px-[50px] relative top-[-20px]'>
-			<div className='w-[100%] relative top-[60px]'>
+		<section className='w-[100vw] pb-[80px] px-[50px] relative top-[-34px]'>
+			<div className='w-[100%] relative top-[70px]'>
 				<Header setUserScreen={setUserScreen} userScreen={userScreen} className='' />
 			</div>
 			<div className='flex gap-0'>

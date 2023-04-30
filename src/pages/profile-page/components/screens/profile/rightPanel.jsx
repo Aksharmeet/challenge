@@ -5,7 +5,7 @@ function RightPanel() {
 	const user = JSON.parse(localStorage.getItem('crrUser'))
 
 	return (
-		<div className='flex flex-col w-[50%] py-5 gap-3 text-[#545454] px-8'>
+		<div className='flex flex-col w-[55%] py-5 gap-3 text-[#545454] px-8'>
 			<div>
 				<h3 className=' text-[#B3B3B3]  font-light text-[20px] mb-3 relative right-9'>Address:</h3>
 				<div className='flex gap-3 pb-5'>

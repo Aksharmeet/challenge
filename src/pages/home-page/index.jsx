@@ -26,8 +26,8 @@ function Index() {
 	}
 
 	return (
-		<section className='bg-landing-bg w-[100vw] bg-no-repeat flex justify-center items-center'>
-			<div className='w-full max-w-[35rem] bg-white border border-gray-200 rounded-3xl shadow-xl  m-5'>
+		<section className='bg-landing-bg w-[100vw] h-[100vh] bg-no-repeat flex justify-center items-center'>
+			<div className='w-full max-w-[35rem] bg-white border border-gray-200 rounded-3xl shadow-xl  m-5 overflow-hidden'>
 				<div className='flex items-center justify-between bg-stone-100 p-10'>
 					<h5 className='text-xl font-medium text-[#545454] leading-none text-gray-90 text-center w-[100%]'>Select an account</h5>
 				</div>
