@@ -3,7 +3,7 @@ function LeftPanel() {
 
 	return (
 		<div className='flex flex-col w-[40%] justify-center items-center py-5  border-r gap-3 text-[#545454] px-8'>
-			<img src={user.profilepicture} alt='profile' width='200' height='200' className='rounded-full' />
+			{user.profilepicture && <img src={user.profilepicture} alt='profile' width='200' height='200' className='rounded-full' />}
 			<p className='text-[22px] font-medium'>{user.name}</p>
 			<div>
 				<div className='flex justify-center items-center gap-3 pb-5 border-b'>

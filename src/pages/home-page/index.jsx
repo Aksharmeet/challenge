@@ -42,7 +42,9 @@ function Index() {
 									>
 										<div className='flex items-center space-x-3'>
 											<div className='flex-shrink-0'>
-												<img className='w-8 h-8 rounded-full' src={user.profilepicture} alt='Bonnie' width='32px' height='32px' />
+												{user.profilepicture && (
+													<img className='w-8 h-8 rounded-full' src={user.profilepicture} alt='Bonnie' width='32px' height='32px' />
+												)}
 											</div>
 											<div className='flex-1 min-w-0'>
 												<p className=' font-light text-base text-[#4A4A4A] truncate'>{user.name}</p>

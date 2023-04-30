@@ -1,6 +1,6 @@
 import UpArrow from '../../../../assets/svgs/upArrow.svg'
 import ChatLeft from '../../../../assets/svgs/chatLeft.svg'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 function Index() {
 	const [toggleChat, setToggleChat] = useState(false)
@@ -28,8 +28,8 @@ function Index() {
 			<div className='transition-all ease-in-out duration-500 overflow-scroll bg-white' style={{ maxHeight: toggleChat ? '300px' : '0' }}>
 				<div className='py-2'>
 					{users.map((user, id) => (
-						<div className='flex items-center gap-3 px-5 py-1 hover:bg-[#F2F2F2]  cursor-pointer'>
-							<img src={user.profilepicture} alt='profile' className='w-7 h-7 rounded-full' />
+						<div className='flex items-center gap-3 px-5 py-1 hover:bg-[#F2F2F2]  cursor-pointer' key={user.id}>
+							{user.profilepicture && <img src={user.profilepicture} alt='profile' className='w-7 h-7 rounded-full' />}
 							<div className='flex justify-between items-center w-[100%]'>
 								<div>
 									<h3 className='font-light text-sm text-[#4A4A4A]'>{user.name}</h3>
