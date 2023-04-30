@@ -1,17 +1,14 @@
 import UpArrow from '../../../../assets/svgs/upArrow.svg'
 import ChatLeft from '../../../../assets/svgs/chatLeft.svg'
-import { useState } from 'react'
 
-function Index() {
-	const [toggleChat, setToggleChat] = useState(false)
-
+function Index({ chatWindowActive, setChatWindowActive }) {
 	const users = JSON.parse(localStorage.getItem('users'))
 
 	return (
 		<div className='w-[270px]'>
 			<div
 				className='bg-[#2C65C8] rounded-t-lg px-5 py-3  text-white flex items-center justify-between'
-				onClick={() => setToggleChat((prev) => !prev)}
+				onClick={() => setChatWindowActive((prev) => !prev)}
 			>
 				<div className='flex items-start gap-3'>
 					<img src={ChatLeft} alt='chat icon' className='w-5 h-5' />
@@ -21,11 +18,11 @@ function Index() {
 					src={UpArrow}
 					alt='up arrow icon'
 					className='w-4 h-4 transition-transform duration-500'
-					style={{ transform: toggleChat ? 'rotate(180deg)' : '' }}
+					style={{ transform: chatWindowActive ? 'rotate(180deg)' : '' }}
 				/>
 			</div>
 
-			<div className='transition-all ease-in-out duration-500 overflow-scroll bg-white' style={{ maxHeight: toggleChat ? '330px' : '0' }}>
+			<div className='transition-all ease-in-out duration-500 overflow-scroll bg-white' style={{ maxHeight: chatWindowActive ? '330px' : '0' }}>
 				<div className='py-2'>
 					{users.map((user, id) => (
 						<div className='flex items-center gap-3 px-5 py-1 hover:bg-[#F2F2F2]  cursor-pointer' key={user.id}>

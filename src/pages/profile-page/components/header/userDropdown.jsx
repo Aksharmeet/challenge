@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-function UserDropdown() {
+function UserDropdown({ dropDownActive, setDropDownActive }) {
 	const user = JSON.parse(localStorage.getItem('crrUser'))
 	const users = JSON.parse(localStorage.getItem('users'))
 
@@ -33,18 +33,17 @@ function UserDropdown() {
 		window.location.reload()
 	}
 
-	const [show, setShow] = useState(false)
 	return (
 		<div>
-			<div className='flex items-center gap-3 cursor-pointer' onClick={() => setShow((prev) => !prev)}>
+			<div className='flex items-center gap-3 cursor-pointer' onClick={() => setDropDownActive((prev) => !prev)}>
 				{user.profilepicture && <img src={user.profilepicture} alt='profile' width='40' height='40' className='rounded-full' />}
 				<p className='text-[#494949]'>{user.name}</p>
 			</div>
 			<div
 				className='absolute top-[74px] right-[0px] z-50 overflow-hidden rounded-3xl transition-all duration-300 bg-white'
 				style={{
-					maxHeight: show ? '' : 0,
-					boxShadow: show ? 'rgba(14, 30, 37, 0.07) 0px 2px 4px 0px, rgba(14, 30, 37, 0.07) 0px 2px 16px 15px' : '',
+					maxHeight: dropDownActive ? '' : 0,
+					boxShadow: dropDownActive ? 'rgba(14, 30, 37, 0.07) 0px 2px 4px 0px, rgba(14, 30, 37, 0.07) 0px 2px 16px 15px' : '',
 				}}
 			>
 				<div>
