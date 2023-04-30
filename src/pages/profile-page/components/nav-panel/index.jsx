@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react'
 
 function Index({ userScreen, setUserScreen }) {
 	const animateValues = {
-		profile: '215px',
-		posts: '270px',
-		gallery: '320px',
-		todo: '375px',
+		profile: '0px',
+		posts: '55px',
+		gallery: '105px',
+		todo: '165px',
 	}
 	const handleScreenChange = (screen) => {
 		setUserScreen(screen)
@@ -43,7 +43,7 @@ function Index({ userScreen, setUserScreen }) {
 					<p>ToDo</p>
 				</div>
 				<div
-					className={`w-12 h-8 rounded-full flex items-center justify-center  bg-white absolute right-[-60px]  transition-all`}
+					className={`w-12 h-8 rounded-full flex items-center justify-center mt-[215px] bg-white absolute right-[-60px]  transition-all`}
 					style={{ top: `${crrAnimateValue}` }}
 				>
 					<div className='bg-right-arrow w-5 h-5 mr-4'></div>
