@@ -33,26 +33,31 @@ function Index() {
 				</div>
 				<div className='flow-root pb-5 pt-0 '>
 					<div role='list' className='h-96 overflow-scroll'>
-						{users.length > 0
-							? users.map((user) => (
-									<div
-										className='py-[10px] cursor-pointer border-b-slate-200 border-b hover:bg-slate-50 transition-colors mx-7'
-										key={user.id}
-										onClick={() => handleUserClick(user)}
-									>
-										<div className='flex items-center space-x-3'>
-											<div className='flex-shrink-0'>
-												{user.profilepicture && (
-													<img className='w-8 h-8 rounded-full' src={user.profilepicture} alt='Bonnie' width='32px' height='32px' />
-												)}
-											</div>
-											<div className='flex-1 min-w-0'>
-												<p className=' font-light text-base text-[#4A4A4A] truncate'>{user.name}</p>
-											</div>
+						{users.length > 0 ? (
+							users.map((user) => (
+								<div
+									className='py-[13px] cursor-pointer border-b-slate-200 border-b hover:bg-slate-50 transition-colors mx-7'
+									key={user.id}
+									onClick={() => handleUserClick(user)}
+								>
+									<div className='flex items-center space-x-3 relative'>
+										<div className='flex-shrink-0 absolute z-10'>
+											{user.profilepicture && (
+												<img className='w-8 h-8 rounded-full' src={user.profilepicture} alt='Bonnie' width='32px' height='32px' />
+											)}
+										</div>
+										<div className='w-[32px] h-[32px] rounded-full bg-slate-300 absolute left-[-12px]' />
+										<div className='flex-1 min-w-0 relative left-8'>
+											<p className=' font-light text-base text-[#4A4A4A] truncate'>{user.name}</p>
 										</div>
 									</div>
-							  ))
-							: 'Loading...'}
+								</div>
+							))
+						) : (
+							<div className='flex w-full h-full justify-center items-center'>
+								<p className='font-bold text-stone-400 text-3xl'>Loading...</p>
+							</div>
+						)}
 					</div>
 				</div>
 			</div>

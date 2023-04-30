@@ -25,7 +25,7 @@ function Index() {
 				/>
 			</div>
 
-			<div className='transition-all ease-in-out duration-500 overflow-scroll bg-white' style={{ maxHeight: toggleChat ? '300px' : '0' }}>
+			<div className='transition-all ease-in-out duration-500 overflow-scroll bg-white' style={{ maxHeight: toggleChat ? '330px' : '0' }}>
 				<div className='py-2'>
 					{users.map((user, id) => (
 						<div className='flex items-center gap-3 px-5 py-1 hover:bg-[#F2F2F2]  cursor-pointer' key={user.id}>

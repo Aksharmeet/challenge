@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react'
 
 function Index({ userScreen, setUserScreen }) {
 	const animateValues = {
-		profile: '28vh',
-		posts: '34.5vh',
-		gallery: '41.5vh',
-		todo: '47.5vh',
+		profile: '215px',
+		posts: '270px',
+		gallery: '320px',
+		todo: '375px',
 	}
 	const handleScreenChange = (screen) => {
 		setUserScreen(screen)
@@ -19,7 +19,7 @@ function Index({ userScreen, setUserScreen }) {
 	}, [userScreen])
 
 	return (
-		<section className='bg-gradient-to-bl from-[#375BC8] to-[#6039C8] h-[1100px]  p-10 rounded-3xl w-[250px] min-w-[250px]'>
+		<section className='bg-gradient-to-bl from-[#375BC8] to-[#6039C8] h-[700px]  p-10 rounded-3xl w-[250px] min-w-[250px]'>
 			<div className=' text-lg font-normal text-[#A5A5E5] flex flex-col justify-center h-[100%] relative '>
 				<div className={`py-3 cursor-pointer ${userScreen === 'profile' ? 'text-[#fff]' : ''}`} onClick={() => handleScreenChange('profile')}>
 					<p>Profile</p>
