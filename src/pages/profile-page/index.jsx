@@ -35,7 +35,7 @@ function Index() {
 	}, [dropDownActive, chatWindowActive])
 
 	return (
-		<section className='w-[100vw] pb-[80px] px-[50px] relative top-[-34px]'>
+		<section className='w-[100vw] pb-[80px] px-[20px] relative top-[-34px] max-w-[1400px] mx-auto'>
 			<div className='w-[100%] relative top-[70px]'>
 				<Header userScreen={userScreen} dropDownActive={dropDownActive} setDropDownActive={setDropDownActive} />
 			</div>

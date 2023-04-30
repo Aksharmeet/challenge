@@ -2,7 +2,7 @@ function LeftPanel() {
 	const user = JSON.parse(localStorage.getItem('crrUser'))
 
 	return (
-		<div className='flex flex-col w-[40%] justify-center items-center py-5  border-r gap-3 text-[#545454] px-8'>
+		<div className='flex flex-col xl:w-[40%] w-full max-w-xl xl:max-w-none mx-auto  xl:min-w-[420px] justify-center items-center pb-5  xl:border-r gap-3 text-[#545454] px-8'>
 			{user.profilepicture && <img src={user.profilepicture} alt='profile' width='200' height='200' className='rounded-full' />}
 			<p className='text-[22px] font-medium'>{user.name}</p>
 			<div>
@@ -31,12 +31,12 @@ function LeftPanel() {
 					<div className='text-right text-[#B3B3B3]  font-light text-[20px] flex flex-col gap-3'>
 						<p>Name </p>
 						<p>catchphrase </p>
-						<p className='mt-8'>bs </p>
+						<p className='xl:mt-[29px]'>bs </p>
 					</div>
 					<div className='text-right text-[#B3B3B3] font-light text-[20px] flex flex-col gap-3'>
 						<p>: </p>
 						<p>: </p>
-						<p className='mt-8'>:</p>
+						<p className='xl:mt-[29px]'>:</p>
 					</div>
 					<div className='text-[20px] font-medium flex flex-col gap-3'>
 						<p>{user.company.name}</p>

@@ -23,6 +23,6 @@ const Map = ({ lat, lng }) => {
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [lat, lng])
 
-	return <div id='map' className='w-[110%] relative right-5 h-[340px] rounded-3xl'></div>
+	return <div id='map' className='w-[570px] relative right-5 h-[340px] rounded-3xl'></div>
 }
 export default Map
