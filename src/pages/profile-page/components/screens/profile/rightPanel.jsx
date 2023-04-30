@@ -3,7 +3,7 @@ import Map from '../../../../../components/map'
 
 function RightPanel() {
 	const user = JSON.parse(localStorage.getItem('crrUser'))
-	console.log(user)
+
 	return (
 		<div className='flex flex-col w-[50%] py-5 gap-3 text-[#545454] px-8'>
 			<div>
