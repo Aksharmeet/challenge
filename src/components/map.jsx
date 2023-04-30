@@ -20,7 +20,8 @@ const Map = ({ lat, lng }) => {
 			})
 		}
 		getGoogle()
-	}, [])
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, [lat, lng])
 
 	return <div id='map' className='w-[115%] relative right-10 h-[340px] rounded-3xl'></div>
 }

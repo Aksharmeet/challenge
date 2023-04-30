@@ -29,6 +29,14 @@ function RightPanel() {
 					</div>
 				</div>
 				<Map lat={user.address.geo.lat} lng={user.address.geo.lng} />
+				<div className='flex gap-3 justify-end mt-3'>
+					<p className='text-sm text-zinc-400'>
+						Lat:<span className='text-black font-medium text-sm pl-1'>{user.address.geo.lat}</span>
+					</p>
+					<p className='text-sm text-zinc-400'>
+						Lng:<span className='text-black font-medium text-sm pl-1'>{user.address.geo.lng}</span>
+					</p>
+				</div>
 			</div>
 		</div>
 	)
