@@ -1,11 +1,8 @@
 import { useEffect } from 'react'
-import mapboxgl from 'mapbox-gl' // or "const mapboxgl = require('mapbox-gl');"
-// or const {Loader} = require('google-maps'); without typescript
+import mapboxgl from 'mapbox-gl'
+import convertIntoNumber from '../utils/convertIntoNumber'
 
 const Map = ({ lat, lng }) => {
-	const convertIntoNumber = (str) => {
-		return str.replace(/(?!^)-|[^\d.-]+/g, '')
-	}
 	useEffect(() => {
 		if (lng && lat) {
 			const validLng = convertIntoNumber(lng)
