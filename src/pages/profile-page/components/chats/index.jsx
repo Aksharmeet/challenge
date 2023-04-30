@@ -5,7 +5,7 @@ function Index({ chatWindowActive, setChatWindowActive }) {
 	const users = JSON.parse(localStorage.getItem('users'))
 
 	return (
-		<div className='w-[270px]'>
+		<div className='w-[270px] select-none'>
 			<div
 				className='bg-[#2C65C8] rounded-t-lg px-5 py-3  text-white flex items-center justify-between'
 				onClick={() => setChatWindowActive((prev) => !prev)}
