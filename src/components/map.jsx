@@ -8,7 +8,7 @@ const Map = ({ lat, lng }) => {
 			const validLng = convertIntoNumber(lng)
 			const validLat = convertIntoNumber(lat)
 
-			mapboxgl.accessToken = 'pk.eyJ1IjoiYWtzaGFybWVldCIsImEiOiJja3JxMzl2Z3IwNG13MnBvMGxoaWJrZmRqIn0.WFDL-rnY-MEbbXii3fae5A'
+			mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_TOKEN
 			new mapboxgl.Map({
 				container: 'map', // container ID
 				style: 'mapbox://styles/mapbox/streets-v12', // style URL
