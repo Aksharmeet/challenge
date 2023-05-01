@@ -1,10 +1,10 @@
-import Header from './components/header'
-import NavPanel from './components/nav-panel'
-import Chats from './components/chats'
-import Screen from './components/screens'
+import Header from '../components/profile-page/header'
+import NavPanel from '../components/profile-page/NavPanel'
+import Chats from '../components/profile-page/Chats'
+import Screen from '../components/profile-page/screens'
 import { useEffect, useState } from 'react'
 
-function Index() {
+function ProfilePage() {
 	const [userScreen, setUserScreen] = useState('profile')
 	const [dropDownActive, setDropDownActive] = useState(false)
 	const [chatWindowActive, setChatWindowActive] = useState(false)
@@ -51,4 +51,4 @@ function Index() {
 	)
 }
 
-export default Index
+export default ProfilePage

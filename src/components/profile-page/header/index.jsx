@@ -1,4 +1,4 @@
-import UserDropdown from './userDropdown'
+import UserDropdown from './UserDropdow'
 
 function Index({ userScreen, dropDownActive, setDropDownActive }) {
 	return (

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 
-function Index() {
+function HomePage() {
 	const [users, setUsers] = useState([])
 
 	useEffect(() => {
@@ -65,4 +65,4 @@ function Index() {
 	)
 }
 
-export default Index
+export default HomePage

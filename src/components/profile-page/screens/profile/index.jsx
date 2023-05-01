@@ -1,5 +1,5 @@
-import LeftPanel from './leftPanel'
-import RightPanel from './rightPanel'
+import LeftPanel from './LeftPanel'
+import RightPanel from './RightPanel'
 
 function Index() {
 	return (

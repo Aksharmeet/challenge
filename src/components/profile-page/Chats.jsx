@@ -1,5 +1,5 @@
-import UpArrow from '../../../../assets/svgs/upArrow.svg'
-import ChatLeft from '../../../../assets/svgs/chatLeft.svg'
+import UpArrow from '../../assets/svgs/upArrow.svg'
+import ChatLeft from '../../assets/svgs/chatLeft.svg'
 
 function Index({ chatWindowActive, setChatWindowActive }) {
 	const users = JSON.parse(localStorage.getItem('users'))

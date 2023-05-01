@@ -1,6 +1,6 @@
-import Gallary from './gallery'
-import Posts from './posts'
-import ToDO from './to-do'
+import Gallary from './Gallery'
+import Posts from './Posts'
+import ToDO from './Todo'
 import Profile from './profile'
 
 function Index({ userScreen }) {
